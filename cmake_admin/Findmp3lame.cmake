@@ -33,6 +33,7 @@ find_library(mp3lame_mp3lame_LIBRARY NAMES "mp3lame" "libmp3lame"
                                            "libmp3lame-static")
 find_library(mp3lame_mpghip_LIBRARY NAMES "mpghip" "libmpghip"
                                           "libmpghip-static")
+message(STATUS "mp3lame: ${mp3lame_mp3lame_LIBRARY}")
 
 # Forward the result to CMake
 include(FindPackageHandleStandardArgs)
